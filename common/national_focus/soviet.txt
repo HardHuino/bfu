@@ -1153,7 +1153,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_seize_assets
-		icon = GFX_SOV_borrow_spanish_gold
+		icon = GFX_focus_mex_triumph_over_the_cristeros
 		prerequisite = { focus = SOV_aluminium focus = SOV_tolkach }
 		x = 0
 		y = 1
@@ -4111,12 +4111,11 @@ focus_tree = {
 			}
 		}
 	}
-	
 
 	focus = {
 		id = SOV_the_path_of_marxism_leninism
 		icon = GFX_focus_SOV_the_path_of_marxism_leninism
-		x = 16
+		x = 18
 		y = 0
 		# offset = {
 		# 	x = -8
@@ -5225,7 +5224,7 @@ focus_tree = {
 		id = SOV_anti_fascist_diplomacy
 		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
-		x = -5
+		x = -6
 		y = 1
 		relative_position_id = SOV_the_path_of_marxism_leninism
 		cost = 1
@@ -5255,9 +5254,178 @@ focus_tree = {
 				limit = { has_government = fascism }
 				add_opinion_modifier = { target = SOV modifier = anti_fascist_diplomacy_fascists }
 			}
-				custom_effect_tooltip = unlock_propaganda_campaign_tt
+				# custom_effect_tooltip = unlock_propaganda_campaign_tt
 				# unlock_decision_tooltip = SOV_propaganda_anti_fascism
-				custom_effect_tooltip = propaganda_campaign_requirement_tt
+				# custom_effect_tooltip = propaganda_campaign_requirement_tt
+		}
+	}
+
+	# SCW support
+
+	focus = {
+		id = SOV_support_spain_low
+		icon = GFX_SOV_goal_volunteers_in_spain
+		prerequisite = { focus = SOV_anti_fascist_diplomacy }
+		mutually_exclusive = { focus = SOV_support_spain_high }
+		x = -1
+		y = 1
+		relative_position_id = SOV_anti_fascist_diplomacy
+		cost = 1
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = { 
+			SPR_scw_in_progress = yes
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = spain_war_rule
+						option = ENABLED
+					}
+				}
+				SPR = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment_0
+						amount = 2500
+						producer = SOV
+					}
+					add_equipment_to_stockpile = {
+						type = squad_equipment_0
+						amount = 500
+						producer = SOV
+					}
+					add_equipment_to_stockpile = {
+						type = horse_equipment
+						amount = 500
+						producer = SOV
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment_1
+						amount = 125
+						producer = SOV
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = spain_war_rule
+						option = DISABLED
+					}
+				}
+				army_experience = 50
+			}
+
+			SOV_eco_modifier_tt = yes # tooltip
+			add_to_variable = { SOV_soviet_economy_consumer_goods_factor = 0.025 tooltip = consumer_goods_factor_tt }
+			
+		}
+	}
+
+	focus = {
+		id = SOV_support_spain_high
+		icon = GFX_SOV_goal_military_in_spain
+		prerequisite = { focus = SOV_anti_fascist_diplomacy }
+		mutually_exclusive = { focus = SOV_support_spain_low }
+		x = 1
+		y = 1
+		relative_position_id = SOV_anti_fascist_diplomacy
+		cost = 1
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = { 
+			SPR_scw_in_progress = yes
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = spain_war_rule
+						option = ENABLED
+					}
+				}
+				SPR = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment_0
+						amount = 10000
+						producer = SOV
+					}
+					add_equipment_to_stockpile = {
+						type = squad_equipment_0
+						amount = 2000
+						producer = SOV
+					}
+					add_equipment_to_stockpile = {
+						type = horse_equipment
+						amount = 2000
+						producer = SOV
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment_1
+						amount = 500
+						producer = SOV
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = spain_war_rule
+						option = DISABLED
+					}
+				}
+				army_experience = 50
+			}
+			
+			SOV_eco_modifier_tt = yes # tooltip
+			add_to_variable = { SOV_soviet_economy_consumer_goods_factor = 0.05 tooltip = consumer_goods_factor_tt }
+			
+		}
+	}
+
+	focus = {
+		id = SOV_seize_spanish_gold
+		icon = GFX_SOV_borrow_spanish_gold
+		prerequisite = { focus = SOV_support_spain_high focus = SOV_support_spain_low }
+		x = 1
+		y = 1
+		relative_position_id = SOV_support_spain_low
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = { 
+			date > 1937.10.1
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = SOV_spanish_gold
+				days = 365
+			}
 		}
 	}
 
@@ -5266,7 +5434,7 @@ focus_tree = {
 		icon = GFX_SOV_goal_operation_zet
 		text = SOV_support_china
 		prerequisite = { focus = SOV_anti_fascist_diplomacy }
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = SOV_anti_fascist_diplomacy
 		cost = 3
@@ -5434,9 +5602,9 @@ focus_tree = {
 
 	focus = {
 		id = SOV_claims_on_baltic
-		icon = GFX_SOV_claims_on_the_baltic #GFX_SOV_goal_baltic_security
+		icon = GFX_SOV_goal_baltic_security #GFX_SOV_claims_on_the_baltic
 		prerequisite = { focus = SOV_anti_fascist_diplomacy }
-		x = -2
+		x = -3
 		y = 1
 		relative_position_id = SOV_anti_fascist_diplomacy
 		cost = 5
@@ -6899,7 +7067,7 @@ focus_tree = {
 				date > 1941.1.1
 			}
 		}
-		x = 39
+		x = 41
 		y = 0
 		cost = 1
 
@@ -7937,7 +8105,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_study_spain
-		icon = GFX_SOV_goal_military_in_spain
+		icon = GFX_ITA_learn_from_the_spanish_civil_war
 		prerequisite = { focus = SOV_expand_tanks }
 		x = 0
 		y = 1
@@ -8371,7 +8539,7 @@ focus_tree = {
 		id = SOV_transpolar_flights
 
 		icon = GFX_SOV_red_army_airforce #GFX_focus_SOV_transpolar_flights
-		x = 53
+		x = 55
 		y = 0
 		cost = 3
 
@@ -8959,7 +9127,7 @@ focus_tree = {
 		id = SOV_expand_the_red_fleet
 
 		icon = GFX_goal_generic_build_navy
-		x = 6
+		x = 7
 		y = 0
 		relative_position_id = SOV_transpolar_flights
 		cost = 3
