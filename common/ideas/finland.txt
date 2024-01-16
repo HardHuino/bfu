@@ -367,6 +367,90 @@ country = {
 		}
 	}
 
+	FIN_Vassa_riot = {
+		
+		allowed = {
+			tag = FIN
+		}
+		
+		picture = idea_mex_revolutionary_army
+	
+		removal_cost = -1
+		
+		modifier = {
+			stability_factor = -0.15
+			war_support_factor = -0.10
+			surrender_limit = -0.2
+		}
+	}
+
+	FIN_Vassa_riot2 = {
+		
+		allowed = {
+			tag = FIN
+		}
+		
+		picture = idea_mex_revolutionary_army
+	
+		removal_cost = -1
+		
+		modifier = {
+			surrender_limit = -0.1
+		}
+	}
+
+	FIN_militarisation = {
+		
+		allowed = {
+			tag = FIN
+		}
+		
+		picture = chi_hyper_inflation2
+	
+		removal_cost = -1
+
+		modifier = {
+			production_speed_arms_factory_factor = 0.10
+	}
+
+	
+
+}
+
+FIN_militarisation2 = {
+		
+	allowed = {
+		tag = FIN
+	}
+	
+	picture = chi_hyper_inflation2
+
+	removal_cost = -1
+
+	modifier = {
+		production_speed_arms_factory_factor = 0.05
+}
+}
+
+FIN_militarisation3 = {
+		
+	allowed = {
+		tag = FIN
+	}
+	
+	picture = chi_hyper_inflation2
+
+	removal_cost = -1
+
+	modifier = {
+		production_speed_arms_factory_factor = 0.05
+		consumer_goods_factor = 0.05
+		stability_weekly = 0.01
+}
+}
+
+
+
 	FIN_revanchism = {
 		
 		allowed = {
@@ -420,6 +504,21 @@ country = {
 			cic_to_target_factor = 0.2
 		}
 	}
+
+	FIN_elite = {
+		
+		allowed = {
+			tag = FIN
+		}
+
+		removal_cost = -1
+		
+		picture = generic_manpower_bonus
+		
+		modifier = {
+			special_forces_cap = 0.20
+		}
+	}
 	
 	FIN_kitchens = {
 		
@@ -432,7 +531,6 @@ country = {
 		removal_cost = -1
 		
 		modifier = {
-			experience_loss_factor = -0.20
 			consumer_goods_factor = -0.05
 		}
 	}
@@ -487,6 +585,53 @@ country = {
 			infantry_equipment = {
 				soft_attack = 0.2
 			}
+		}
+	}
+
+	On_the_Offensive = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			NOT = {
+				has_government = communism
+			}
+		}
+
+		removal_cost = -1
+
+		picture = idea_FIN_opposition_to_winter_war
+		
+		modifier = {
+			army_morale_factor = 0.20
+			attrition = -0.1
+			army_attack_factor = 0.05
+			army_defence_factor = -0.05
+			conscription = 0.01
+		}
+	}
+
+	On_the_Offensive2 = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			NOT = {
+				has_government = communism
+			}
+		}
+
+		removal_cost = -1
+
+		picture = idea_FIN_opposition_to_winter_war
+		
+		modifier = {
+			army_morale_factor = 0.20
+			attrition = -0.1
+			army_attack_factor = 0.1
+			army_defence_factor = -0.1
 		}
 	}
 
@@ -630,4 +775,6 @@ aircraft_manufacturer = {
 		modifier = { aircraft_manufacturer_cost_factor = -1 }
 	}
 }
+
+
 }
