@@ -334,6 +334,17 @@ FRA_VICHY = {
 	color_ui = rgb { 245 123 38 }
 }
 
+FIN_Greater = {
+	color = rgb { 153 153 153 }
+	color_ui = rgb { 153 153 153 }
+}
+
+FIN_commi = {
+	color = rgb { 153 0 0 }
+	color_ui = rgb { 153 0 0 }
+}
+
+
 # WGR = {
 #     color = rgb { 195 236 230 } # The colors are set to be more are less what we are used to
 #     color_ui = rgb { 225 255 255 }
