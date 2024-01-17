@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 
   #### FOCUSES ####
   FIN_land_reform:0 "Land Reform"
@@ -70,6 +70,53 @@
   FIN_join_axis:0 "Join the Axis"
   FIN_join_axis_desc:0 "The time has come to join the Axis, so that we may carve out a glorious Finnish future alongside the Germans."
 
+  FIN_Deunited_Finland:0 "Disunited Finland"
+  FIN_Deunited_Finland_desc:0 "Our country is more disunited than ever, and it's time for things to change."
+  FIN_Consequences_of_the_Vassa_riot:0 "The consequences of Vassa Riot"
+  FIN_Consequences_of_the_Vassa_riot_desc:0 "The inability of the state surprised all parties. The government was shocked as the Lapua movement had already been thought to have subsided. According to Governor Sarlin, 6,000–10,000 soldiers would be needed in Vaasa to contain the crowds. The Governor also believed that he had been threatened by the communists. The left-wing and Swedish-speaking press demanded that the perpetrators be punished."
+  FIN_Call_for_change:0 "A call for change"
+  FIN_Call_for_change_desc:0 "With elections coming up, it's time to come up with some innovative ideas for the army and civilians."
+  FIN_The_Civilian_respond:0 "The answer for civilians"
+  FIN_The_Civilian_respond_desc:0 "The answer for civilians must be given as quickly as possible to lift the country up."
+  FIN_Aid_Entreprise:0 "Twin Industry Boost"
+  FIN_Aid_Entreprise_desc:0 "Channeling efforts into both light industry and manufacturing, our nation launches a strategic industrial overhaul to fuel economic growth and enhance resilience."
+  FIN_Privatise_Entreprise:0 "Privatise entreprise"
+  FIN_Privatise_Entreprise_desc:0 "We will privatise essential entreprise."
+  FIN_Investissement_in_infra:0 "Investissement in the infrastructre"
+  FIN_Investissement_in_infra_desc:0 "In a bid for global tech leadership, we're backing both the electronics sector and medical research, promising economic gains and heightened innovation."
+  FIN_Aid_the_people:0 "Aid the people"
+  FIN_Aid_the_people_desc:0 "Launching a comprehensive aid program to uplift our citizens, this focus prioritizes welfare and community well-being."
+  FIN_little_investissement_in_extraction:0 "Little investissement in extraction"
+  FIN_little_investissement_in_extraction_desc:0 "Strategically streamlining extraction processes, this focus minimizes investment while maximizing resource output, ensuring economic efficiency and sustainable development."
+  FIN_appoit_specialiste:0 "Appoint Industry Specialist"
+  FIN_appoit_specialiste_desc:0 "By appointing an industry specialist, we aim to optimize operations, enhancing productivity and efficiency across key sectors."
+  FIN_German_investor:0 "German Investor"
+  FIN_German_investor_desc:0 "Attracting a German investor leverages external expertise, fostering international collaboration and boosting economic growth."
+  FIN_education_is_the_key:0 "Education Emphasis"
+  FIN_education_is_the_key_desc:0 "Recognizing the pivotal role of education."
+  FIN_End_of_the_economic_xpension:0 "Economic Expansion Capstone"
+  FIN_End_of_the_economic_expension_desc:0 "Marking the end of economic expansion efforts, this focus consolidates gains, ensuring sustained growth and stability through strategic planning and resource optimization."
+  FIN_The_military_respond:0 "The answer for the army"
+  FIN_The_military_respond_desc:0 "Now is the time to rethink our military system for future wars."
+  FIN_The_two_proposition:0 "The two proposals"
+  FIN_The_two_proposition_desc:0 "Our army can take two paths; one offensive and one defensive. One will allow us to do great damage to the Soviets, the other will prevent them from taking Helsinki."
+  FIN_The_soviet_are_comming:0 "The Soviets are coming"
+  FIN_The_soviet_are_comming_desc:0 "We have to prepare our defenses before the Soviets arrive - they'll never take Helsinki!"
+  FIN_We_are_comming_for_the_soviet:0 "We're coming for the Soviets"
+  FIN_We_are_comming_for_the_soviet_desc:0 "The Soviets are inferior beings, it's time to show them Finnish power - We'll take Leningrad!"
+
+
+
+
+
+
+
+
+
+
+
+
+
   #### EVENTS ####
   #  finland.10.t:0 "Embarrassing Defeat"
   #  finland.10.d:0 "Our invasion of Finland has been a spectacular failure. In the face of continued defeats and foreign pressure we have no choice to but sign a peace treaty with Finland."
@@ -83,11 +130,26 @@
   FIN_lahti_tt:0 "\n§RNote that this designer will add a 20% penalty to production speed on Finnish infantry equipment for countries that are licensing it.§!"
   sisu2:0 "Sisu"
   sisu3:0 "Sisu"
-  FIN_kitchens:0 "Field Kitchens"
+  FIN_kitchens:0 "Help the housewife"
   FIN_arms_purchases:0 "German Payments"
   FIN_revanchism:0 "Revanchism"
   FIN_victorious_idea:0 "Victorious Spirit"
   FIN_counter_intel:0 "Finnish Intelligence"
+  FIN_first_attack_enthusiasm:0 "The enthusiasm of the first attacks"
+
+  FIN_Vassa_riot:0 "The consequences of Vassa Riot"
+  FIN_Vassa_riot2:0 "An almost stable country"
+  On_the_Offensive:0 "We're coming for the soviets"
+  On_the_Offensive2:0 "We're coming for the soviets"
+  FIN_militarisation:0 "Rapid militarization"
+  FIN_militarisation2:0 "Finnish militarization"
+  FIN_militarisation3:0 "The cost of the militarization"
+  FIN_elite:0 "Utti Jaeger Regiment"
+  FIN_Foreign_support2:0 "Foreign support"
+  On_the_defensive:0 "The Soviets are coming"
+  On_the_defensive2:0 "The Soviets are coming"
+  FIN_public_investissement:0 "Public investment"
+  FIN_public_support:0 "Public support"
 
   #### TRAITS ####
   mannerheim:0 "Marshal of Finland"
@@ -114,3 +176,9 @@
   ### DESCRIPTION ###
   FIN_GATHERING_STORM_DESC:0 "In 1936, Finland was a young and relatively small country located in Northern Europe. It had gained independence from Russia in 1917, and had since then established a parliamentary republic. However, tensions with the Soviet Union had been growing due to Finland's unwillingness to cede territory to the USSR. Despite this, Finland maintained a democratic system and a strong economy based on exports of timber, paper, and other natural resources. The military was primarily focused on defending the country from potential aggression by the Soviet Union, and had built up a network of defensive fortifications along the eastern border."
   # FIN_GATHERING_STORM_DESC:0 "In 1936, Finland was a young and relatively small country located in Northern Europe. It had gained independence from Russia in 1917, and had since then established a parliamentary republic. However, tensions with the Soviet Union had been growing due to Finland's unwillingness to cede territory to the USSR. Despite this, Finland maintained a democratic system and a strong economy based on exports of timber, paper, and other natural resources. The military was primarily focused on defending the country from potential aggression by the Soviet Union, and had built up a network of defensive fortifications along the eastern border."
+
+  FIN_Greater:0 "Greater Finland"
+  FIN_Greater_DEF:0 "Greater Finland"
+
+  FIN_commi:0 "People Republic of Finland"
+  FIN_commi_DEF:0 "People Republic of Finland"
