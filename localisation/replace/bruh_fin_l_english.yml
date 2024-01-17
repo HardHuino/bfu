@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 
   #### FOCUSES ####
   FIN_land_reform:0 "Land Reform"
@@ -117,6 +117,13 @@ l_english:
 
 
 
+
+
+
+
+
+
+
   #### EVENTS ####
   #  finland.10.t:0 "Embarrassing Defeat"
   #  finland.10.d:0 "Our invasion of Finland has been a spectacular failure. In the face of continued defeats and foreign pressure we have no choice to but sign a peace treaty with Finland."
@@ -130,7 +137,7 @@ l_english:
   FIN_lahti_tt:0 "\n§RNote that this designer will add a 20% penalty to production speed on Finnish infantry equipment for countries that are licensing it.§!"
   sisu2:0 "Sisu"
   sisu3:0 "Sisu"
-  FIN_kitchens:0 "Help the housewife"
+  FIN_kitchens:0 "Help the Housewife"
   FIN_arms_purchases:0 "German Payments"
   FIN_revanchism:0 "Revanchism"
   FIN_victorious_idea:0 "Victorious Spirit"
@@ -150,6 +157,8 @@ l_english:
   On_the_defensive2:0 "The Soviets are coming"
   FIN_public_investissement:0 "Public investment"
   FIN_public_support:0 "Public support"
+  integred_by_the_soviet:0 "Being integrated by the soviet"
+  integreting_soviet:0 "Integrating our new provinces"
 
   #### TRAITS ####
   mannerheim:0 "Marshal of Finland"
