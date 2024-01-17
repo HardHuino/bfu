@@ -2329,10 +2329,7 @@ focus = {
 		
 		completion_reward = {
 			white_peace = SOV
-			SOV = {
-				add_to_faction = ROOT
-			}		
-
+	
 
 			add_popularity = {
 				ideology = communism
@@ -2385,6 +2382,9 @@ focus = {
 	
 	
 		completion_reward = {
+			SOV = {
+				add_to_faction = ROOT
+			}	
 			add_war_support = 0.1
 		}
 	}
