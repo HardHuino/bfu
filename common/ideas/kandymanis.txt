@@ -60,10 +60,28 @@ ideas = {
 			picture = MEX_revolutionary_army
 
 			modifier = {
-                send_volunteer_size = 5
-				special_forces_min = 66
+                send_volunteer_size = 2
 			}
-		}	
+		}
+
+		volunteer_minimum_major_GER = {
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				date > 1939.1.1
+			}
+
+			removal_cost = -1
+
+			picture = MEX_revolutionary_army
+
+			modifier = {
+                send_volunteer_size = 3
+			}
+		}
+
 
 		volunteer_minimum_GER_NA = {
 			allowed = {
@@ -85,8 +103,7 @@ ideas = {
 			picture = MEX_revolutionary_army
 
 			modifier = {
-                send_volunteer_size = 3
-				special_forces_min = 44
+                send_volunteer_size = 1
 			}
 		}
 
@@ -105,8 +122,7 @@ ideas = {
 
 
 			modifier = {
-                send_volunteer_size = 3
-				special_forces_min = 44
+                send_volunteer_size = 1
 			}
 		}	
 	}

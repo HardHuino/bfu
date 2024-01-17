@@ -70,6 +70,7 @@ if = {
 	add_ideas = {
 		ROM_king_carol_ii_hedonist
 		ROM_undeveloped_export_industry
+		volunteer_minimum_minor
 	}
 	# give_guarantee = CZE
 	# give_guarantee = GRE

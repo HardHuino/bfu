@@ -5281,10 +5281,13 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		bypass = {
-		}
-
 		completion_reward = {
+
+			swap_ideas = {
+				remove_idea = volunteer_minimum_major
+				add_idea = SOV_volunteer_minimum_major_sov1
+			}
+
 			if = {
 				limit = {
 					has_game_rule = {
@@ -5350,10 +5353,13 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		bypass = {
-		}
-
 		completion_reward = {
+
+			swap_ideas = {
+				remove_idea = volunteer_minimum_major
+				add_idea = SOV_volunteer_minimum_major_sov2
+			}
+
 			if = {
 				limit = {
 					has_game_rule = {
@@ -5417,9 +5423,6 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
-		bypass = {
-		}
 
 		completion_reward = {
 			add_timed_idea = {

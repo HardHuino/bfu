@@ -11,6 +11,44 @@ ideas = {
 
 	country= {
 
+		#Volunteers
+
+		SOV_volunteer_minimum_major_sov1 = {
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				date > 1939.1.1
+			}
+
+			removal_cost = -1
+
+			picture = MEX_revolutionary_army
+
+			modifier = {
+                send_volunteer_size = 3
+			}
+		}
+
+		SOV_volunteer_minimum_major_sov2 = {
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				date > 1939.1.1
+			}
+
+			removal_cost = -1
+
+			picture = MEX_revolutionary_army
+
+			modifier = {
+                send_volunteer_size = 4
+			}
+		}
+
 		SOV_last_stand_of_the_ussr = {
 
 			allowed = {
@@ -52,6 +90,7 @@ ideas = {
 				}
 			}
 		}
+
 		SOV_winter_offensive = {
 
 			allowed = {
