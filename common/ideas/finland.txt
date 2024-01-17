@@ -154,6 +154,21 @@ country = {
 		}
 	}
 
+	FIN_Foreign_support2 = {
+		
+		allowed = {
+			tag = FIN
+		}
+		
+		picture = FRA_national_mobilization_focus
+
+		removal_cost = -1
+		
+		modifier = {
+			weekly_manpower = 7500
+		}
+	}
+
 	FIN_winter_war = {
 		
 		allowed = {
@@ -177,7 +192,6 @@ country = {
 			industry_air_damage_factor = -0.9
 			cas_damage_reduction = 0.5
 			army_speed_factor = 0.1 
-			weekly_manpower = 5000
 		}
 		
 		equipment_bonus = {
@@ -432,6 +446,37 @@ FIN_militarisation2 = {
 }
 }
 
+FIN_public_investissement = {
+		
+	allowed = {
+		tag = FIN
+	}
+	
+	picture = ENG_PB_Imperial_Bank
+
+	removal_cost = -1
+
+	modifier = {
+		production_speed_industrial_complex_factor = 0.1
+}
+}
+
+FIN_public_support = {
+		
+	allowed = {
+		tag = FIN
+	}
+	
+	picture = ENG_PB_WUP_Workers_Chrater_Expanded
+
+	removal_cost = -1
+
+	modifier = {
+		production_speed_industrial_complex_factor = 0.05
+		consumer_goods_factor = -0.05
+}
+}
+
 FIN_militarisation3 = {
 		
 	allowed = {
@@ -632,8 +677,120 @@ FIN_militarisation3 = {
 			attrition = -0.1
 			army_attack_factor = 0.1
 			army_defence_factor = -0.1
+			conscription = 0.01
 		}
 	}
+
+	On_the_defensive = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			NOT = {
+				has_government = communism
+			}
+		}
+
+		removal_cost = -1
+
+		picture = idea_FIN_opposition_to_winter_war
+		
+		modifier = {
+			army_morale_factor = 0.20
+			attrition = -0.1
+			army_attack_factor = -0.05
+			army_defence_factor = 0.1
+			conscription = 0.01
+		}
+	}
+
+	On_the_defensive2 = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			NOT = {
+				has_government = communism
+			}
+		}
+
+		removal_cost = -1
+
+		picture = idea_FIN_opposition_to_winter_war
+		
+		modifier = {
+			army_morale_factor = 0.20
+			attrition = -0.1
+			army_attack_factor = -0.05
+			army_defence_factor = 0.15
+			conscription = 0.01
+		}
+	}
+
+	integreting_soviet = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			NOT = {
+				has_government = communism
+			}
+		}
+
+		removal_cost = -1
+
+		picture = spr_subvert_soviet_control
+		
+		modifier = {
+			conscription = -0.015
+		}
+	}
+
+	integred_by_the_soviet = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			NOT = {
+				has_government = communism
+			}
+		}
+
+		removal_cost = -1
+
+		picture = spr_subvert_soviet_control
+		
+		modifier = {
+			conscription = -0.02
+		}
+	}
+
+	FIN_first_attack_enthusiasm = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			NOT = {
+				has_government = communism
+			}
+		}
+
+		removal_cost = -1
+
+		picture = idea_SWE_save_finland
+		
+		modifier = {
+			army_attack_factor = 0.025
+
+		}
+	}
+
+
 
 	sisu = {
 		allowed = {
