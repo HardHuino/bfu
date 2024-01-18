@@ -32,7 +32,7 @@ focus_tree = {
 	# Nouveay focus finland #
 
 	focus = {
-		id = FIN_Deunited_Finland
+		id = FIN_disunited_finland
 		icon = GFX_FRA_martial_law
 		x = 5
 		y = 0
@@ -56,9 +56,9 @@ focus_tree = {
 
 		cost = 5
 		
-		relative_position_id = FIN_Deunited_Finland
+		relative_position_id = FIN_disunited_finland
 		prerequisite = {
-			focus = FIN_Deunited_Finland
+			focus = FIN_disunited_finland
 		}
 		
 
@@ -99,7 +99,7 @@ focus_tree = {
 	############################################
 
 	focus = {
-		id = FIN_The_Civilian_respond
+		id = FIN_the_civilian_response
 		icon = GFX_focus_NORDIC_dem_civilian
 		x = 5
 		y = 1
@@ -130,9 +130,9 @@ focus_tree = {
 
 		cost = 5
 		
-		relative_position_id = FIN_The_Civilian_respond
+		relative_position_id = FIN_the_civilian_response
 		prerequisite = {
-			focus = FIN_The_Civilian_respond
+			focus = FIN_the_civilian_response
 		}
 		
 
@@ -174,9 +174,9 @@ focus_tree = {
 
 		cost = 5
 		
-		relative_position_id = FIN_The_Civilian_respond
+		relative_position_id = FIN_the_civilian_response
 		prerequisite = {
-			focus = FIN_The_Civilian_respond
+			focus = FIN_the_civilian_response
 		}
 		
 
@@ -235,7 +235,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = FIN_Investissement_in_infra
+		id = FIN_investments_in_infra
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 1
 		y = 1
@@ -309,7 +309,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = FIN_little_investissement_in_extraction
+		id = FIN_little_investments_in_extraction
 		icon = GFX_focus_NORDIC_dem_selector_civilian
 		x = 1
 		y = 1
@@ -353,15 +353,15 @@ focus_tree = {
 	}
 
 	focus = {
-		id = FIN_appoit_specialiste
+		id = FIN_appoint_specialists
 		icon = GFX_focus_NOR_approach_kretsen
 		x = -2
 		y = 1
 
 		cost = 5
 		
-		relative_position_id = FIN_little_investissement_in_extraction
-		prerequisite = {focus = FIN_little_investissement_in_extraction}
+		relative_position_id = FIN_little_investments_in_extraction
+		prerequisite = {focus = FIN_little_investments_in_extraction}
 		prerequisite = {focus = FIN_Aid_the_people}
 		
 
@@ -382,8 +382,8 @@ focus_tree = {
 
 		cost = 10
 		
-		relative_position_id = FIN_appoit_specialiste
-		prerequisite = {focus = FIN_appoit_specialiste}
+		relative_position_id = FIN_appoint_specialists
+		prerequisite = {focus = FIN_appoint_specialists}
 		
 
 		available = {
@@ -440,7 +440,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = FIN_End_of_the_economic_expension
+		id = FIN_End_of_the_economic_expansion
 		icon = GFX_focus_FIN_pragmatic_socialism
 		x = 0
 		y = 1
@@ -675,7 +675,7 @@ focus = {
 	}
 
 	focus = {
-		id = FIN_massive_investissement_in_the_public
+		id = FIN_massive_investments_in_the_public
 		icon = GFX_HUN_support_domestic_industry
 		prerequisite = { focus = FIN_land_reform focus = FIN_finish_mannerheim }
 		x = -1
@@ -712,17 +712,17 @@ focus = {
 				}
 			}
 		
-		add_ideas = FIN_public_investissement
+		add_ideas = FIN_public_investments
 		}
 	}
 
 	focus = {
 		id = FIN_prepare_for_sov_infantry
 		icon = GFX_FRA_french_artillery
-		prerequisite = { Focus = FIN_massive_investissement_in_the_public }
+		prerequisite = { Focus = FIN_massive_investments_in_the_public }
 		x = 0
 		y = 1
-		relative_position_id = FIN_massive_investissement_in_the_public
+		relative_position_id = FIN_massive_investments_in_the_public
 
 		cost = 5
 
@@ -883,7 +883,7 @@ focus = {
 	}
 
 	focus = {
-		id = FIN_bourgeoisie_want_expension
+		id = FIN_bourgeoisie_want_expansion
 		icon = GFX_focus_NORDIC_mon_selector_airforce
 		prerequisite = { Focus = FIN_public_support }
 		x = 1
@@ -1348,7 +1348,7 @@ focus = {
 	focus = {
 		id = FIN_We_are_ready_for_war
 		icon = GFX_focus_FIN_mustapaidat
-		prerequisite = { focus = FIN_Repress_the_pacifist Focus = FIN_bourgeoisie_want_expension }
+		prerequisite = { focus = FIN_Repress_the_pacifist Focus = FIN_bourgeoisie_want_expansion }
 		x = -3
 		y = 1
 		relative_position_id = FIN_Repress_the_pacifist
@@ -1453,7 +1453,7 @@ focus = {
 			}
 
 			focus = {
-				id = FIN_end_the_expension
+				id = FIN_end_the_expansion
 				icon = GFX_focus_FIN_finnish_influence_in_the_baltic
 				prerequisite = { focus = FIN_we_win_the_continuation_war }
 				x = -1
@@ -1478,7 +1478,7 @@ focus = {
 					id = FIN_declare_greater_finland
 					icon = GFX_focus_FIN_greater_finland
 					prerequisite = { focus = FIN_take_leningrad }
-					prerequisite = { focus = FIN_end_the_expension }
+					prerequisite = { focus = FIN_end_the_expansion }
 					x = 0
 					y = 2
 					relative_position_id = FIN_we_win_the_continuation_war
@@ -1516,65 +1516,32 @@ focus = {
 		
 		completion_reward = {
 
-			hidden_effect = {
-				white_peace = SOV
-			}
+			white_peace = SOV
 
 			GER = {
 				remove_from_faction = FIN
 			}
-			
+
 			hidden_effect = {
-				add_state_core = 111
-				transfer_state = 111
-
-				add_state_core = 926
-				transfer_state = 926
-
-				add_state_core = 149
-				transfer_state = 149
-
-				add_state_core = 929
-				transfer_state = 929
-
-				add_state_core = 148
-				transfer_state = 148
-
-				add_state_core = 722
-				transfer_state = 722
-
-				add_state_core = 150
-				transfer_state = 150
-
-				add_state_core = 930
-				transfer_state = 930
-
-				add_state_core = 927
-				transfer_state = 927
-
-				add_state_core = 928
-				transfer_state = 928
-			}
-
-			add_popularity = {
-				ideology = communism
-				popularity = 0.45
-			}
-			if = {
-				limit = {
-					NOT = { has_government = communism }
-				}
-				set_politics = {
-					ruling_party = communism
+				SOV = {
+					transfer_state = 146
+					transfer_state = 147
+					transfer_state = 111
+					transfer_state = 926
+					transfer_state = 149
+					transfer_state = 929
+					transfer_state = 148
+					transfer_state = 722
+					transfer_state = 150
+					transfer_state = 930
+					transfer_state = 927
+					transfer_state = 928
 				}
 			}
-
-			set_cosmetic_tag = FIN_commi
 
 			add_stability = -0.2
 			add_war_support = -0.2
 
-			add_ideas = integred_by_the_soviet
 		}
 	}
 
@@ -1588,10 +1555,53 @@ focus = {
 		relative_position_id = FIN_we_loose_the_continuation_war
 	
 		cost = 10
-	
+		
 	
 		completion_reward = {
+			
+			set_cosmetic_tag = FIN_commi
+
+			add_popularity = {
+				ideology = communism
+				popularity = 0.45
+			}
+
+			if = {
+				limit = {
+					NOT = { has_government = communism }
+				}
+				set_politics = {
+					ruling_party = communism
+				}
+			}
+			
+			hidden_effect = {
+				add_state_core = 111
+				add_state_core = 926
+				add_state_core = 149
+				add_state_core = 929
+				add_state_core = 148
+				add_state_core = 722
+				add_state_core = 150
+				add_state_core = 930
+				add_state_core = 927
+				add_state_core = 928
+			}
+
+			transfer_state = 111
+			transfer_state = 926
+			transfer_state = 149
+			transfer_state = 929
+			transfer_state = 148
+			transfer_state = 722
+			transfer_state = 150
+			transfer_state = 930
+			transfer_state = 927
+			transfer_state = 928
+			
 			add_stability = 0.1
+
+			add_ideas = integred_by_the_soviet
 		}
 	}
 

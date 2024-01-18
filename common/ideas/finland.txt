@@ -182,7 +182,7 @@ country = {
 			}
 		}
 		
-		picture = FRA_national_mobilization_focus
+		picture = FIN_opposition_to_winter_war
 
 		removal_cost = -1
 		
@@ -289,7 +289,7 @@ country = {
 			}
 		}
 		
-		picture = FRA_national_mobilization_focus
+		picture = FIN_opposition_to_winter_war
 
 		removal_cost = -1
 		
@@ -387,7 +387,7 @@ country = {
 			tag = FIN
 		}
 		
-		picture = idea_mex_revolutionary_army
+		picture = generic_syndicalist_militia
 	
 		removal_cost = -1
 		
@@ -404,7 +404,7 @@ country = {
 			tag = FIN
 		}
 		
-		picture = idea_mex_revolutionary_army
+		picture = GER_arbeitsinsatz
 	
 		removal_cost = -1
 		
@@ -419,80 +419,79 @@ country = {
 			tag = FIN
 		}
 		
-		picture = chi_hyper_inflation2
-	
+		picture = FIN_the_workers_state
+
 		removal_cost = -1
 
 		modifier = {
 			production_speed_arms_factory_factor = 0.10
+		}
+
 	}
 
-	
-
-}
-
-FIN_militarisation2 = {
+	FIN_militarisation2 = {
+			
+		allowed = {
+			tag = FIN
+		}
 		
-	allowed = {
-		tag = FIN
+		picture = FIN_the_workers_state
+
+		removal_cost = -1
+
+		modifier = {
+			production_speed_arms_factory_factor = 0.05
+		}
+
 	}
-	
-	picture = chi_hyper_inflation2
 
-	removal_cost = -1
-
-	modifier = {
-		production_speed_arms_factory_factor = 0.05
-}
-}
-
-FIN_public_investissement = {
+	FIN_militarisation3 = {
+			
+		allowed = {
+			tag = FIN
+		}
 		
-	allowed = {
-		tag = FIN
+		picture = FIN_the_workers_state
+
+		removal_cost = -1
+
+		modifier = {
+			production_speed_arms_factory_factor = 0.05
+			consumer_goods_factor = 0.05
+			stability_weekly = 0.01
+		}
 	}
-	
-	picture = ENG_PB_Imperial_Bank
 
-	removal_cost = -1
-
-	modifier = {
-		production_speed_industrial_complex_factor = 0.1
-}
-}
-
-FIN_public_support = {
+	FIN_public_investments = {
+			
+		allowed = {
+			tag = FIN
+		}
 		
-	allowed = {
-		tag = FIN
+		picture = FIN_finnish_federation_of_trade_unions_light
+
+		removal_cost = -1
+
+		modifier = {
+			production_speed_industrial_complex_factor = 0.1
 	}
-	
-	picture = ENG_PB_WUP_Workers_Chrater_Expanded
+	}
 
-	removal_cost = -1
-
-	modifier = {
-		production_speed_industrial_complex_factor = 0.05
-		consumer_goods_factor = -0.05
-}
-}
-
-FIN_militarisation3 = {
+	FIN_public_support = {
+			
+		allowed = {
+			tag = FIN
+		}
 		
-	allowed = {
-		tag = FIN
+		picture = SWE_with_finland_for_sweden_swe
+
+		removal_cost = -1
+
+		modifier = {
+			production_speed_industrial_complex_factor = 0.05
+			consumer_goods_factor = -0.05
+		}
 	}
-	
-	picture = chi_hyper_inflation2
-
-	removal_cost = -1
-
-	modifier = {
-		production_speed_arms_factory_factor = 0.05
-		consumer_goods_factor = 0.05
-		stability_weekly = 0.01
-}
-}
 
 
 
@@ -542,7 +541,7 @@ FIN_militarisation3 = {
 
 		removal_cost = -1
 		
-		picture = chi_hyper_inflation
+		picture = MEX_callistas
 		
 		targeted_modifier = {
 			tag = GER
@@ -558,7 +557,7 @@ FIN_militarisation3 = {
 
 		removal_cost = -1
 		
-		picture = generic_manpower_bonus
+		picture = FIN_lotta_svard
 		
 		modifier = {
 			special_forces_cap = 0.20
@@ -571,7 +570,7 @@ FIN_militarisation3 = {
 			tag = FIN
 		}
 		
-		picture = generic_goods_red_bonus
+		picture = generic_foreign_capital
 
 		removal_cost = -1
 		
@@ -586,7 +585,7 @@ FIN_militarisation3 = {
 			tag = FIN
 		}
 		
-		picture = generic_manpower_bonus
+		picture = SWE_varnplikt
 
 		removal_cost = -1
 		
@@ -602,7 +601,7 @@ FIN_militarisation3 = {
 			tag = FIN
 		}
 		
-		picture = generic_manpower_bonus
+		picture = SWE_varnplikt
 
 		removal_cost = -1
 		
@@ -646,7 +645,7 @@ FIN_militarisation3 = {
 
 		removal_cost = -1
 
-		picture = idea_FIN_opposition_to_winter_war
+		picture = FIN_finnish_march_of_conquest
 		
 		modifier = {
 			army_morale_factor = 0.20
@@ -670,7 +669,7 @@ FIN_militarisation3 = {
 
 		removal_cost = -1
 
-		picture = idea_FIN_opposition_to_winter_war
+		picture = FIN_finnish_march_of_conquest
 		
 		modifier = {
 			army_morale_factor = 0.20
@@ -694,7 +693,7 @@ FIN_militarisation3 = {
 
 		removal_cost = -1
 
-		picture = idea_FIN_opposition_to_winter_war
+		picture = generic_shield_against_communism
 		
 		modifier = {
 			army_morale_factor = 0.20
@@ -718,7 +717,7 @@ FIN_militarisation3 = {
 
 		removal_cost = -1
 
-		picture = idea_FIN_opposition_to_winter_war
+		picture = generic_shield_against_communism
 		
 		modifier = {
 			army_morale_factor = 0.20
@@ -742,7 +741,7 @@ FIN_militarisation3 = {
 
 		removal_cost = -1
 
-		picture = spr_subvert_soviet_control
+		picture = NOR_anti_communist_sentiment
 		
 		modifier = {
 			conscription = -0.015
@@ -762,7 +761,7 @@ FIN_militarisation3 = {
 
 		removal_cost = -1
 
-		picture = spr_subvert_soviet_control
+		picture = NOR_sivog
 		
 		modifier = {
 			conscription = -0.02
@@ -782,7 +781,7 @@ FIN_militarisation3 = {
 
 		removal_cost = -1
 
-		picture = idea_SWE_save_finland
+		picture = SWE_save_finland
 		
 		modifier = {
 			army_attack_factor = 0.025
