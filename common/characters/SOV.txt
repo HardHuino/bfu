@@ -1283,7 +1283,7 @@ SOV_semyon_timoshenko={
 				  original_tag = SOV
 			  }
 			  traits = {
-				  air_air_combat_training_2
+				army_concealment_1
 			  }
 				  cost = 100
 			  ai_will_do = {

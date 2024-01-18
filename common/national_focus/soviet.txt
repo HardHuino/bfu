@@ -3421,8 +3421,8 @@ focus_tree = {
 			add_to_variable = { army_org_factor = 0.1 }
 			custom_effect_tooltip = SOV_high_command_purged_recover_ns_tt
 
-			add_offsite_building = { type = industrial_complex level = 15 }
-			add_offsite_building = { type = arms_factory level = 15 }
+			add_offsite_building = { type = industrial_complex level = 10 }
+			add_offsite_building = { type = arms_factory level = 10 }
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = SOV_propaganda_glory_to_partisans
 			unlock_decision_tooltip = SOV_propaganda_death_to_invaders
@@ -6286,7 +6286,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = SOV_invade_germany_idea
-				days = 180
+				days = 140
 				hidden_effect = {
 					every_army_leader={
 						add_trait = {

@@ -152,10 +152,10 @@ recruit_character = SOV_arno_andreyev
 
 # recruit_character = SOV_vitaly_primakov
 #Not available at game start
-#recruit_character = SOV_vasily_korzh
-#recruit_character = SOV_sidor_kovpak
-#recruit_character = SOV_lev_dovator
-#recruit_character = SOV_pavel_rybalko
+# recruit_character = SOV_vasily_korzh
+# recruit_character = SOV_sidor_kovpak
+# recruit_character = SOV_lev_dovator
+# recruit_character = SOV_pavel_rybalko
 
 if = {
 	limit = {
@@ -203,6 +203,7 @@ SOV_boris_shaposhnikov = {
 }
 SOV_filipp_golikov = {
 	set_character_flag = SOV_safe_from_purge_flag
+	set_character_flag = SOV_safe_from_cowed_by_stalin
 }
 SOV_arno_andreyev = {
 	set_character_flag = SOV_safe_from_purge_flag
@@ -1011,6 +1012,7 @@ set_variable = { SOV_soviet_economy_production_speed_bunker_factor = -0.25 }
 		random_army_leader = {
 			limit = {
 				NOT = { has_character_flag = SOV_character_purged_flag }
+				NOT = { has_character_flag = SOV_safe_from_cowed_by_stalin }
 				NOT = { has_trait = trait_SOV_cowed_by_stalin_army }
 			}
 			add_unit_leader_trait = trait_SOV_cowed_by_stalin_army

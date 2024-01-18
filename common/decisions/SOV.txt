@@ -3370,7 +3370,7 @@ SOV_propaganda_campaigns = {
 							amount > 0
 						}
 					}
-					capital_scope = { add_to_variable = { SOV_steel_bonus = 10 } }
+					capital_scope = { add_to_variable = { SOV_steel_bonus = 20 } }
 				}
 
 				every_controlled_state = {
@@ -3380,7 +3380,7 @@ SOV_propaganda_campaigns = {
 							amount > 0
 						}
 					}
-					capital_scope = { add_to_variable = { SOV_aluminium_bonus = 10 } }
+					capital_scope = { add_to_variable = { SOV_aluminium_bonus = 20 } }
 				}
 
 				every_controlled_state = {
@@ -3390,7 +3390,7 @@ SOV_propaganda_campaigns = {
 							amount > 0
 						}
 					}
-					capital_scope = { add_to_variable = { SOV_chromium_bonus = 10 } }
+					capital_scope = { add_to_variable = { SOV_chromium_bonus = 20 } }
 				}
 
 				every_controlled_state = {
@@ -3400,7 +3400,7 @@ SOV_propaganda_campaigns = {
 							amount > 0
 						}
 					}
-					capital_scope = { add_to_variable = { SOV_tungsten_bonus = 10 } }
+					capital_scope = { add_to_variable = { SOV_tungsten_bonus = 20 } }
 				}
 			}
 

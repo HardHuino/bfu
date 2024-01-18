@@ -3010,10 +3010,8 @@ ideas = {
 			targeted_modifier = {
 				tag = GER
 				attack_bonus_against = 0.10
-				defense_bonus_against = 0.10
 			}
 			modifier = {
-				army_speed_factor = 0.05
 				supply_consumption_factor = -0.1
 				planning_speed = 0.25
 				no_supply_grace = 48
